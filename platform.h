@@ -49,7 +49,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*----------------------------------------------------------------------------
 *----------------------------------------------------------------------------*/
 #define SOFTFLOAT_BUILTIN_CLZ 1
-//#define SOFTFLOAT_INTRINSIC_INT128 1
+#define SOFTFLOAT_INTRINSIC_INT128 1
 #define SOFTFLOAT_FAST_INT64 1
 #include "opts-GCC.h"
 
