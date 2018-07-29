@@ -1,3 +1,12 @@
+# CMake for softfloat by Emanuele Ruffaldi 2018
+#
+# SPECIALIZE_TYPE can be:
+# 8086-SSE
+# 8086
+# RISCV
+# ARM-VFPv2
+# ARM-VFPv2-defaultNaN
+#
 set(SPECIALIZE_TYPE 8086-SSE)
 
 set(CMAKE_BUILD_TYPE Release)
@@ -331,3 +340,6 @@ foreach (src ${OBJS_PRIMITIVES})
 endforeach()
 
 add_library(softfloat ${srcs})
+
+install (TARGETS softfloat DESTINATION lib)
+install (FILES source/include/softfloat.h source/include/softfloat_types.h DESTINATION include)
