@@ -7,6 +7,7 @@
 # ARM-VFPv2
 # ARM-VFPv2-defaultNaN
 #
+cmake_minimum_required(VERSION 2.5)
 set(SPECIALIZE_TYPE 8086-SSE)
 
 set(CMAKE_BUILD_TYPE Release)
